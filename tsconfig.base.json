@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@fb-clone/ngfb/shared/ui/icons": [
+        "libs/ngfb/shared/ui/icons/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

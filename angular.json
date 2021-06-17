@@ -18,7 +18,10 @@
             "tsConfig": "apps/ngfb/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["apps/ngfb/src/favicon.ico", "apps/ngfb/src/assets"],
-            "styles": ["apps/ngfb/src/styles.scss"],
+            "styles": [
+              "apps/ngfb/src/styles.scss",
+              "apps/ngfb/src/tailwind.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -113,6 +116,31 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/ngfb-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "ngfb-shared-ui-icons": {
+      "projectType": "library",
+      "root": "libs/ngfb/shared/ui/icons",
+      "sourceRoot": "libs/ngfb/shared/ui/icons/src",
+      "prefix": "fb-clone",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ngfb/shared/ui/icons"],
+          "options": {
+            "jestConfig": "libs/ngfb/shared/ui/icons/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ngfb/shared/ui/icons/src/**/*.ts",
+              "libs/ngfb/shared/ui/icons/src/**/*.html"
+            ]
           }
         }
       }

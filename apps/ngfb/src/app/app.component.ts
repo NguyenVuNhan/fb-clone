@@ -2,9 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'fb-clone-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: `<p class="text-center text-9xl">{{ title }}</p>`,
 })
 export class AppComponent {
-  title = 'ngfb';
+  title = 'Facebook clone';
 }
