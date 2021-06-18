@@ -15,8 +15,25 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@fb-clone/ngfb/home/feature": ["libs/ngfb/home/feature/src/index.ts"],
+      "@fb-clone/ngfb/home/ui/new-feed": [
+        "libs/ngfb/home/ui/new-feed/src/index.ts"
+      ],
+      "@fb-clone/ngfb/shared/ui/icon-btn": [
+        "libs/ngfb/shared/ui/icon-btn/src/index.ts"
+      ],
       "@fb-clone/ngfb/shared/ui/icons": [
         "libs/ngfb/shared/ui/icons/src/index.ts"
+      ],
+      "@fb-clone/ngfb/shared/utils/decorators": [
+        "libs/ngfb/shared/utils/decorators/src/index.ts"
+      ],
+      "@fb-clone/ngfb/shell/feature": ["libs/ngfb/shell/feature/src/index.ts"],
+      "@fb-clone/ngfb/shell/ui/header": [
+        "libs/ngfb/shell/ui/header/src/index.ts"
+      ],
+      "@fb-clone/ngfb/shell/ui/layout": [
+        "libs/ngfb/shell/ui/layout/src/index.ts"
       ]
     }
   },

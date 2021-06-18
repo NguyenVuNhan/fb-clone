@@ -29,7 +29,31 @@
       "tags": [],
       "implicitDependencies": ["ngfb"]
     },
+    "ngfb-home-feature": {
+      "tags": ["type:feature", "scope:ngfb"]
+    },
+    "ngfb-home-ui-new-feed": {
+      "tags": ["type:ui", "scope:ngfb"]
+    },
+    "ngfb-shared-assets": {
+      "tags": ["asset"]
+    },
+    "ngfb-shared-ui-icon-btn": {
+      "tags": ["type:ui", "scope:ngfb"]
+    },
     "ngfb-shared-ui-icons": {
+      "tags": ["type:ui", "scope:ngfb"]
+    },
+    "ngfb-shared-utils-decorators": {
+      "tags": ["type:utils", "scope:ngfb"]
+    },
+    "ngfb-shell-feature": {
+      "tags": ["type:feature", "scope:ngfb"]
+    },
+    "ngfb-shell-ui-header": {
+      "tags": ["type:ui", "scope:ngfb"]
+    },
+    "ngfb-shell-ui-layout": {
       "tags": ["type:ui", "scope:ngfb"]
     }
   }

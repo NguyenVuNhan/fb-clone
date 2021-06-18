@@ -4,13 +4,30 @@ module.exports = {
   purge: {
     content: ['**/*.html', '**/*.component.ts', './apps/frontend/safelist.txt'],
   },
-  darkMode: false,
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        primary: '#1db954',
-        sliderRail: '#535353',
-        sliderTrack: '#b3b3b3',
+        alpha: {
+          light: '#3b5998',
+          dark: '#18191a',
+        },
+        beta: {
+          light: '#8b9dc3',
+          dark: '#242526',
+        },
+        gamma: {
+          light: '#dfe3ee',
+          dark: '#3a3b3c',
+        },
+        psi: {
+          light: '#f7f7f7',
+          dark: '#e4e6eb',
+        },
+        omega: {
+          light: '#ffffff',
+          dark: '#b0b3b8',
+        },
       },
     },
   },

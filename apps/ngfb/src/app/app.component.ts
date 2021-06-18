@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'fb-clone-root',
-  template: `<p class="text-center text-9xl">{{ title }}</p>`,
+  template: `<router-outlet></router-outlet>`,
 })
 export class AppComponent {
   title = 'Facebook clone';
