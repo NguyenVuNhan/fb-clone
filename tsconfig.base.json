@@ -16,14 +16,29 @@
     "baseUrl": ".",
     "paths": {
       "@fb-clone/ngfb/home/feature": ["libs/ngfb/home/feature/src/index.ts"],
+      "@fb-clone/ngfb/home/ui/chat-sidebar": [
+        "libs/ngfb/home/ui/chat-sidebar/src/index.ts"
+      ],
       "@fb-clone/ngfb/home/ui/new-feed": [
         "libs/ngfb/home/ui/new-feed/src/index.ts"
+      ],
+      "@fb-clone/ngfb/home/ui/sidebar": [
+        "libs/ngfb/home/ui/sidebar/src/index.ts"
+      ],
+      "@fb-clone/ngfb/shared/ui/avatar": [
+        "libs/ngfb/shared/ui/avatar/src/index.ts"
+      ],
+      "@fb-clone/ngfb/shared/ui/bagde": [
+        "libs/ngfb/shared/ui/bagde/src/index.ts"
       ],
       "@fb-clone/ngfb/shared/ui/icon-btn": [
         "libs/ngfb/shared/ui/icon-btn/src/index.ts"
       ],
       "@fb-clone/ngfb/shared/ui/icons": [
         "libs/ngfb/shared/ui/icons/src/index.ts"
+      ],
+      "@fb-clone/ngfb/shared/ui/sidebar-item": [
+        "libs/ngfb/shared/ui/sidebar-item/src/index.ts"
       ],
       "@fb-clone/ngfb/shared/utils/decorators": [
         "libs/ngfb/shared/utils/decorators/src/index.ts"

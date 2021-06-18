@@ -32,16 +32,31 @@
     "ngfb-home-feature": {
       "tags": ["type:feature", "scope:ngfb"]
     },
+    "ngfb-home-ui-chat-sidebar": {
+      "tags": ["type:ui", "scope:ngfb"]
+    },
     "ngfb-home-ui-new-feed": {
+      "tags": ["type:ui", "scope:ngfb"]
+    },
+    "ngfb-home-ui-sidebar": {
       "tags": ["type:ui", "scope:ngfb"]
     },
     "ngfb-shared-assets": {
       "tags": ["asset"]
     },
+    "ngfb-shared-ui-avatar": {
+      "tags": ["type:ui", "scope:ngfb"]
+    },
+    "ngfb-shared-ui-bagde": {
+      "tags": ["type:ui", "scope:ngfb"]
+    },
     "ngfb-shared-ui-icon-btn": {
       "tags": ["type:ui", "scope:ngfb"]
     },
     "ngfb-shared-ui-icons": {
+      "tags": ["type:ui", "scope:ngfb"]
+    },
+    "ngfb-shared-ui-sidebar-item": {
       "tags": ["type:ui", "scope:ngfb"]
     },
     "ngfb-shared-utils-decorators": {

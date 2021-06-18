@@ -9,5 +9,10 @@ module.exports = {
     '<rootDir>/libs/ngfb/shell/ui/header',
     '<rootDir>/libs/ngfb/shared/utils/decorators',
     '<rootDir>/libs/ngfb/shared/ui/icon-btn',
+    '<rootDir>/libs/ngfb/home/ui/sidebar',
+    '<rootDir>/libs/ngfb/home/ui/chat-bar',
+    '<rootDir>/libs/ngfb/shared/ui/sidebar-item',
+    '<rootDir>/libs/ngfb/shared/ui/avatar',
+    '<rootDir>/libs/ngfb/shared/ui/bagde',
   ],
 };

@@ -1,0 +1,21 @@
+<fb-clone-sidebar-item
+  *ngFor="let item of sidebarItems"
+  img="/assets/sidebar/{{ item.img }}"
+  text="{{ item.text }}"
+></fb-clone-sidebar-item>
+<div
+  class="w-full rounded-lg hover:bg-gamma-light dark:hover:bg-gamma-dark text-black dark:text-omega-dark flex items-center p-2"
+>
+  <fb-clone-icon-btn key="expand-more"></fb-clone-icon-btn>
+  <p class="ml-3">See More</p>
+</div>
+
+<div
+  class="my-3 border-b w-full border-gamma-light dark:border-omega-dark"
+></div>
+
+<fb-clone-sidebar-item
+  *ngFor="let item of shortCutItems"
+  img="/assets/sidebar/{{ item.img }}"
+  text="{{ item.text }}"
+></fb-clone-sidebar-item>

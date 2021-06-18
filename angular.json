@@ -152,6 +152,31 @@
         }
       }
     },
+    "ngfb-home-ui-chat-sidebar": {
+      "projectType": "library",
+      "root": "libs/ngfb/home/ui/chat-sidebar",
+      "sourceRoot": "libs/ngfb/home/ui/chat-sidebar/src",
+      "prefix": "fb-clone",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ngfb/home/ui/chat-sidebar"],
+          "options": {
+            "jestConfig": "libs/ngfb/home/ui/chat-sidebar/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ngfb/home/ui/chat-sidebar/src/**/*.ts",
+              "libs/ngfb/home/ui/chat-sidebar/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
     "ngfb-home-ui-new-feed": {
       "projectType": "library",
       "root": "libs/ngfb/home/ui/new-feed",
@@ -177,6 +202,31 @@
         }
       }
     },
+    "ngfb-home-ui-sidebar": {
+      "projectType": "library",
+      "root": "libs/ngfb/home/ui/sidebar",
+      "sourceRoot": "libs/ngfb/home/ui/sidebar/src",
+      "prefix": "fb-clone",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ngfb/home/ui/sidebar"],
+          "options": {
+            "jestConfig": "libs/ngfb/home/ui/sidebar/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ngfb/home/ui/sidebar/src/**/*.ts",
+              "libs/ngfb/home/ui/sidebar/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
     "ngfb-shared-assets": {
       "root": "libs/ngfb/shared/assets",
       "sourceRoot": "libs/ngfb/shared/assets/src",
@@ -186,6 +236,56 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["libs/ngfb/shared/assets/**/*.ts"]
+          }
+        }
+      }
+    },
+    "ngfb-shared-ui-avatar": {
+      "projectType": "library",
+      "root": "libs/ngfb/shared/ui/avatar",
+      "sourceRoot": "libs/ngfb/shared/ui/avatar/src",
+      "prefix": "fb-clone",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ngfb/shared/ui/avatar"],
+          "options": {
+            "jestConfig": "libs/ngfb/shared/ui/avatar/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ngfb/shared/ui/avatar/src/**/*.ts",
+              "libs/ngfb/shared/ui/avatar/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "ngfb-shared-ui-bagde": {
+      "projectType": "library",
+      "root": "libs/ngfb/shared/ui/bagde",
+      "sourceRoot": "libs/ngfb/shared/ui/bagde/src",
+      "prefix": "fb-clone",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ngfb/shared/ui/bagde"],
+          "options": {
+            "jestConfig": "libs/ngfb/shared/ui/bagde/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ngfb/shared/ui/bagde/src/**/*.ts",
+              "libs/ngfb/shared/ui/bagde/src/**/*.html"
+            ]
           }
         }
       }
@@ -235,6 +335,31 @@
             "lintFilePatterns": [
               "libs/ngfb/shared/ui/icons/src/**/*.ts",
               "libs/ngfb/shared/ui/icons/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "ngfb-shared-ui-sidebar-item": {
+      "projectType": "library",
+      "root": "libs/ngfb/shared/ui/sidebar-item",
+      "sourceRoot": "libs/ngfb/shared/ui/sidebar-item/src",
+      "prefix": "fb-clone",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ngfb/shared/ui/sidebar-item"],
+          "options": {
+            "jestConfig": "libs/ngfb/shared/ui/sidebar-item/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ngfb/shared/ui/sidebar-item/src/**/*.ts",
+              "libs/ngfb/shared/ui/sidebar-item/src/**/*.html"
             ]
           }
         }

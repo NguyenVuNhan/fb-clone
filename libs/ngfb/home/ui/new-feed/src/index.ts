@@ -1,1 +1,1 @@
-export * from './lib/ngfb-home-ui-new-feed.module';
+export * from './lib/new-feed.module';
