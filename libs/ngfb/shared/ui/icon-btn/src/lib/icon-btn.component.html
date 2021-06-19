@@ -1,5 +1,11 @@
 <button
-  class="bg-gamma-light dark:bg-gamma-dark rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-300 dark:hover:bg-gray-600"
+  class="rounded-full flex items-center justify-center hover:bg-gray-300 dark:hover:bg-gray-600"
+  [ngClass]="{
+    'w-8 h-8': size === 'sm',
+    'w-10 h-10': size === 'md',
+    'w-12 h-12': size === 'lg',
+    'bg-gamma-light dark:bg-gamma-dark': !noBg
+  }"
 >
   <svg-icon [key]="key"></svg-icon>
 </button>

@@ -1,0 +1,5 @@
+@layer components {
+  .separator {
+    @apply my-3 mx-2 border-b w-full border-gamma-light dark:border-omega-dark;
+  }
+}

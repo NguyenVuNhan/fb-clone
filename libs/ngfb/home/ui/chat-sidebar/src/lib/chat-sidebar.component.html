@@ -1,0 +1,24 @@
+<p class="ml-2 font-semibold text-black dark:text-omega-dark">Sponsored</p>
+<div class="separator"></div>
+
+<div class="text-black dark:text-omega-dark">
+  <p class="ml-2 font-semibold float-left">Contacts</p>
+  <fb-clone-icon-btn
+    key="more-horiz"
+    class="float-right"
+    size="sm"
+    [noBg]="true"
+  ></fb-clone-icon-btn>
+  <fb-clone-icon-btn
+    key="search"
+    class="float-right"
+    size="sm"
+    [noBg]="true"
+  ></fb-clone-icon-btn>
+</div>
+
+<fb-clone-sidebar-item
+  *ngFor="let item of chatItems"
+  [img]="item.img"
+  text="{{ item.name }}"
+></fb-clone-sidebar-item>

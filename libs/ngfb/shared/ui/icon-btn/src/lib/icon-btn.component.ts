@@ -7,4 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class IconBtnComponent {
   @Input() key!: string;
+  @Input() size: 'sm' | 'md' | 'lg' = 'md';
+  @Input() noBg = false;
 }

@@ -25,10 +25,7 @@
                 "output": "assets"
               }
             ],
-            "styles": [
-              "apps/ngfb/src/styles.scss",
-              "apps/ngfb/src/tailwind.scss"
-            ],
+            "styles": ["apps/ngfb/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
