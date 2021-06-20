@@ -1,2 +1,13 @@
 @layer utilities {
+  // Filters
+  .filter-secondary-icon {
+    filter: invert(39%) sepia(21%) saturate(200%) saturate(109.5%)
+      hue-rotate(174deg) brightness(94%) contrast(86%);
+  }
+
+  @variants dark {
+    .filter-secondary-icon {
+      filter: invert(62%) sepia(98%) saturate(12%) hue-rotate(175deg);
+    }
+  }
 }

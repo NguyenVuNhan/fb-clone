@@ -1,0 +1,65 @@
+<div class="relative">
+  <div
+    class="grid grid-cols-3 grid-rows-1 auto-rows-0 sm:grid-cols-4 md:grid-cols-6 overflow-y-hidden gap-2 relative"
+  >
+    <div class="rounded-lg overflow-hidden">
+      <div class="h-0 pb-[177.77778%] w-full relative">
+        <div class="inset-0 absolute bg-black">
+          <div class="h-full flex flex-col-reverse relative">
+            <img
+              class="object-cover w-full h-full inset-0 absolute hover:scale-110 duration-150 hover:opacity-80"
+              src="/assets/images/story_1.png"
+            />
+            <div
+              class="px-3 pt-6 pb-3 relative bg-omega-light dark:bg-beta-dark"
+            >
+              <div class="inset-x-0 top-[-24px] absolute flex justify-center">
+                <fb-clone-icon-btn
+                  key="add"
+                  [noBg]="true"
+                  [noHover]="true"
+                  class="bg-alpha-light text-white rounded-full border-4 border-omega-light dark:border-beta-dark"
+                ></fb-clone-icon-btn>
+              </div>
+              <p class="text-black dark:text-white text-sm font-semibold">
+                Create story
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngFor="let item of storyItems" class="rounded-lg overflow-hidden">
+      <div class="h-0 pb-[177.77778%] w-full relative">
+        <div class="inset-0 absolute bg-black">
+          <div class="h-full flex flex-col-reverse relative">
+            <img
+              class="object-cover w-full h-full inset-0 absolute hover:scale-110 duration-150 hover:opacity-80"
+              [src]="item.img"
+            />
+            <img
+              class="border-4 rounded-full border-alpha-light absolute top-3 left-3 w-9 h-9"
+              [src]="item.avatar"
+            />
+            <div
+              class="bg-gradient-to-t from-black to-transparent px-3 pt-6 pb-3 relative"
+            >
+              <p class="text-black dark:text-white font-semibold">
+                {{ item.name }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="inset-y-0 right-[-24px] absolute flex items-center">
+    <fb-clone-icon-btn
+      key="arrow-forward"
+      size="lg"
+      class="text-black dark:text-white"
+    ></fb-clone-icon-btn>
+  </div>
+</div>

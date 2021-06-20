@@ -1,5 +1,9 @@
 <div
-  class="h-full w-full hover:bg-omega-light dark:hover:bg-gamma-dark flex items-center justify-center"
+  class="btn"
+  [ngClass]="{
+    'h-5/6': !active,
+    'hover:bg-transparent dark:hover:bg-transparent': active
+  }"
 >
   <svg-icon [key]="key" size="xl"></svg-icon>
 </div>

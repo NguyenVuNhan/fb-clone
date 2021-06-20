@@ -7,6 +7,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      gridAutoRows: {
+        0: '0',
+      },
       colors: {
         alpha: {
           light: '#3b5998',

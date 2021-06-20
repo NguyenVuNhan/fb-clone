@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'fb-clone-icon-btn[key]',
@@ -9,4 +9,6 @@ export class IconBtnComponent {
   @Input() key!: string;
   @Input() size: 'sm' | 'md' | 'lg' = 'md';
   @Input() noBg = false;
+  @Input() noHover = false;
+  @Output() clickEvt = new EventEmitter<MouseEvent>();
 }

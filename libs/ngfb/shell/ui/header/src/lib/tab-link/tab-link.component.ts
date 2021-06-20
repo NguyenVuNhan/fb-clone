@@ -12,6 +12,7 @@ export class TabLinkComponent implements OnInit {
 
   active = false;
   private baseClass = 'flex-1';
+  private inactiveClass = 'flex items-center';
   private activeClass = 'border-b-4 border-alpha-light text-alpha-light';
 
   constructor() {
@@ -23,6 +24,9 @@ export class TabLinkComponent implements OnInit {
     if (this.key === 'home') {
       this.active = true;
       this.class += ' ' + this.activeClass;
+    } else {
+      this.active = false;
+      this.class += ' ' + this.inactiveClass;
     }
   }
 }

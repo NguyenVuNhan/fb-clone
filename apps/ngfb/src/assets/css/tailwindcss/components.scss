@@ -1,5 +1,13 @@
 @layer components {
   .separator {
-    @apply my-3 mx-2 border-b w-full border-gamma-light dark:border-omega-dark;
+    @apply my-3 mx-2 border-b border-gamma-light dark:border-gamma-dark;
+  }
+
+  .paper {
+    @apply bg-omega-light  dark:bg-beta-dark rounded-lg py-4;
+  }
+
+  .btn {
+    @apply w-full hover:bg-omega-light dark:hover:bg-gamma-dark flex items-center justify-center rounded-lg px-4 py-2;
   }
 }

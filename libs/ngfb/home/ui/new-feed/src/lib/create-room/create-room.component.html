@@ -1,0 +1,38 @@
+<div class="paper overscroll-x-hidden relative">
+  <div class="overscroll-x-contain">
+    <div class="create-room flex flex-grow relative" #scroll>
+      <button
+        class="create-room-btn flex-shrink-0 btn text-alpha-light border border-beta-light w-40 ml-2 mr-4 rounded-full font-bold py-0"
+      >
+        <img src="/assets/functions/create-room.png" class="mr-2" />
+        Create Room
+      </button>
+
+      <fb-clone-avatar
+        *ngFor="let friend of availableFriends"
+        class="create-room-item flex-shrink-0 mr-2"
+        status="active"
+        [img]="friend.img"
+      ></fb-clone-avatar>
+
+      <div class="w-2"></div>
+    </div>
+  </div>
+
+  <div class="absolute left-2 inset-y-0 flex items-center">
+    <fb-clone-icon-btn
+      key="chevron-left"
+      class="text-black dark:text-white"
+      [class.hidden]="!showLeftChevron"
+      (click)="scrollLeft(scroll)"
+    ></fb-clone-icon-btn>
+  </div>
+  <div class="absolute right-0 inset-y-0 flex items-center">
+    <fb-clone-icon-btn
+      key="chevron-right"
+      class="text-black dark:text-white"
+      [class.hidden]="!showRightChevron"
+      (click)="scrollRight(scroll)"
+    ></fb-clone-icon-btn>
+  </div>
+</div>

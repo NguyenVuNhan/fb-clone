@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { SidebarModule } from '@fb-clone/ngfb/home/ui/sidebar';
 import { ChatSidebarModule } from '@fb-clone/ngfb/home/ui/chat-sidebar';
+import { NewFeedModule } from '@fb-clone/ngfb/home/ui/new-feed';
 
 @NgModule({
   imports: [
@@ -11,6 +12,7 @@ import { ChatSidebarModule } from '@fb-clone/ngfb/home/ui/chat-sidebar';
     RouterModule.forChild([{ path: '', component: HomeComponent }]),
     SidebarModule,
     ChatSidebarModule,
+    NewFeedModule,
   ],
   declarations: [HomeComponent],
   exports: [HomeComponent],

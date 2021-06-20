@@ -1,11 +1,14 @@
 <button
-  class="rounded-full flex items-center justify-center hover:bg-gray-300 dark:hover:bg-gray-600"
+  class="rounded-full flex items-center justify-center focus:outline-none"
   [ngClass]="{
     'w-8 h-8': size === 'sm',
     'w-10 h-10': size === 'md',
     'w-12 h-12': size === 'lg',
-    'bg-gamma-light dark:bg-gamma-dark': !noBg
+    'bg-gamma-light dark:bg-gamma-dark': !noBg,
+    'bg-transparent': noBg,
+    'hover:bg-gray-300 dark:hover:bg-gray-600': !noHover
   }"
+  (click)="clickEvt.emit($event)"
 >
-  <svg-icon [key]="key"></svg-icon>
+  <svg-icon [key]="key" [size]="size"></svg-icon>
 </button>

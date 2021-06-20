@@ -1,0 +1,16 @@
+:host {
+  .create-room {
+    scroll-padding: 44px;
+    scroll-snap-type: x mandatory;
+    overflow-y: hidden;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+
+    .create-room-btn {
+    }
+    .create-room-item {
+    }
+  }
+}
